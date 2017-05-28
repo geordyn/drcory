@@ -38,6 +38,18 @@ p {
     top: 0;
 }
 
+.nav-drcory {
+    position: absolute;
+    top: 20px;
+    left: 5px;
+    width: 175px;
+}
+
+#desk-nav nav {
+    position: absolute;
+    right: 0;
+}
+
 .drawer-menu {
     box-sizing: border-box;
     position: fixed;
@@ -264,8 +276,9 @@ p {
 }
 
 .mobile-subhero {
-    font-size: 16px;
+    font-size: 20px;
     font-variant: small-caps;
+    /*opacity: 0.5;*/
 }
 
 #quote {
@@ -899,8 +912,7 @@ footer p {
 
 @media screen and (min-width:768px) {
     #content-container svg {
-        width: 600px;
-        /*height: 0px;*/
+        width: 675px;
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;

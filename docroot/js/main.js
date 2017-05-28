@@ -206,37 +206,24 @@ form.on("mouseenter", function() {
 
 $(function(){
 
-	var L_TO_D = 24*60*60*1000;
-	var L_TO_H = 60*60*1000;
-	var L_TO_M = 60*1000;
-	var L_TO_S = 1000;
-	var THE_DAY = new Date(2014, 9, 1);
 
-	var timer;
-	var today;
 	var offset = 0;
-	var realH = 220;
 
 	var body = $('svg #body');
 	var head = $('svg #head');
 	var real = $('#real');
-	var box_d = $('#cd_d');
-	var box_h = $('#cd_h');
-	var box_m = $('#cd_m');
-	var box_s = $('#cd_s');
 
 	init();
 
 	function init(){
 		timer = setInterval(loop, 30);
 	}
-
+    
 	function loop(){
 		head.attr('stroke-dashoffset', offset);
 		body.attr('stroke-dashoffset', offset);
 		offset += 0.5;
 		if(offset>=6) offset = 0;
-		checkTime();
 	}
 
 });
