@@ -281,9 +281,9 @@ p {
 }
 
 .mobile-subhero {
-    font-size: 20px;
+    font-size: 18px;
     font-variant: small-caps;
-    /*opacity: 0.5;*/
+    font-weight: lighter;
 }
 
 #quote {
